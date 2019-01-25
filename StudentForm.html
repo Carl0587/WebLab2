@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--TO CHANGE THE STYLE OF YOUR FONTS YOU HAVE TO COPY THE LINK OF THE PLACE YOU ARE GETTING YOUR FONT FROM THEN SELECT YOUR FONT STYLE AND USE CSS TO MAKE YOUR CHANGES-->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="Style2.css">
+
+</head>
+<body class="m-3">
+<div class="jumbotron">
+    <h1 id="student-form">Please provide feedback</h1>
+    <h4>the information you provide will be kept confidential</h4>
+</div>
+<div class="row">
+    <div class="col-lg-5">
+        <div>
+            <p>As a student your information is very importnat to us.</p>
+            <p>Please use the provided form to let us know what you think</p>
+        </div>
+        <div>
+            <img width="650" height="500" src="Pics/students.jpg" alt="">
+        </div>
+
+    </div>
+    <div class="col-lg-7">
+        <form class="m-5">
+
+            <label id="name1" for="name"> Name: </label><input id="name" class="form-control" type="text"><br>
+            <label id="email1" for="email"> Email:</label><input id="email"  class="form-control" name="student-email"><br>
+            <label id="comment1" for="comment">Comments </label>
+            <br><textarea name="student-comment" id="comment" class="form-control" cols="30" rows="2" required></textarea><br>
+            <label id="student1">Are you a current student?</label>
+            <div class="form-check">
+                <br><label class="form-check-label"><input class="form-check-input"  name="current-student" type="radio" checked>Yes</label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="current-student" type="radio" >No</label>
+            </div>
+            <div>
+                <br><input class="btn btn-primary mt-2" type="submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

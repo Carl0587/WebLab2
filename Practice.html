@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<h1>Missile Alerts</h1>
+
+<a id="real-alert" href="#">Send Missile Alert</a>
+<a id="test-only" href="#">Send Test Missile Alert</a>
+
+<P>Enter your name:</P>
+<input>
+<P>Enter your email: <input type="email"></P>
+<input type="number">
+<input type="date">
+<input type="time">
+<P>Select a number from this range: 1<input type="range" max="10" min="1">10</P>
+<br>Choose your favorite color: <input type="color">
+<br>What's the secret password? <input type="password">
+<br>Are you sure? <input type="checkbox">
+<!--for multi-line text area use textarea-->
+<p>
+    <br>Whats your favorite joke?
+    <br><textarea></textarea>
+</p>
+<!--for dropdown input group option elements inside a select statement-->
+<p>Whats your favorite weather?
+    <select>
+        <option>Select..</option>
+        <option>Sunny</option>
+        <option>Rainy</option>
+        <option>Snowy</option>
+        <option>Hot</option>
+    </select>
+</p>
+<!--All radio buttons with the same name attribute are part of the same button group
+So, when the user selects one button in a group, the others are deselected
+-->
+
+<!--USING LABELS IS VERY IN A WAY TO HELP USERS ASSISTANCE READERS TO HELP THEM IDENTIFY WHATS GOING ON AS WELL AS IF YOU
+CLICK ON THE LABEL IT SHOULD SELECT THE AREA YOU INTEND-->
+<p>Coke or Pepsi?
+    <!--HERE IS AN EXAMPLE WITH A LABEL AND THE OTHER 2 ARE REGULAR RADIO BUTTONS-->
+    <label><input  name="soda" type="radio">Coke</label>
+    <input  name="soda" type="radio">Pepsi
+    <input  name="soda" type="radio">Dr. Pepper
+
+</p>
+<!--left off slide 15-->
+<br>Whats your lucky number? <input name="Lucky-number" type="number">
+
+<!--VALIDATEING AND SUBMITING FORMS-->
+<!--the required filed fill help validate that information is provided-->
+<form>
+    <label for="item-1">First item(required):</label><input id="item-1" name="item-1" required><br>
+    <label for="item-2">Second Item :</label><input id="item-2" name="item-2"><br>
+    <input type="submit">
+</form>
+
+
+</body>
+</html>
