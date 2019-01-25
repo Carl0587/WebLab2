@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favorite Program</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--TO CHANGE THE STYLE OF YOUR FONTS YOU HAVE TO COPY THE LINK OF THE PLACE YOU ARE GETTING YOUR FONT FROM THEN SELECT YOUR FONT STYLE AND USE CSS TO MAKE YOUR CHANGES-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:700i" rel="stylesheet">
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<body id="program-page">
+    <div  id="program-header" class="jumbotron">
+        <h1 id="header-text">Small Python Program</h1>
+    </div>
+    <div class="row">
+
+        <div class="col-lg-7">
+            <!--THE <PRE> TAGS ARE TO KEEP TEXT THATS PREFORMATTED TO STAY THE SAME-->
+            <div id="code-snip">
+                <pre>
+                    <code class="content">
+
+                        import random
+
+                        fruits = ['Dragonfruit', 'Papaya', 'Pomegranate', 'Watermelon', 'Pinneapple']
+                        random.shuffle(fruits)
+
+                        secretWord = fruits.pop().lower()
+                        correctLetters=[]
+                        incorrectLetters =[]
+                        turns = 6
+                        def hangman():
+                            for i in secretWord:
+                                if i in correctLetters:
+                                    print(i, end=' ')
+                                else:
+                                    print('_', end=' ')
+
+                        def userInput():
+                            print()
+                            while True:
+                                letter = input("Please enter a letter\n: ")
+                                if len(letter) > 1:
+                                    print("Please enter only a single letter.")
+                                elif letter.isnumeric():
+                                    print("Please enter only letters.")
+                                elif letter in correctLetters or letter in incorrectLetters:
+                                    print("The letter you entered hs being guessed already, try again.")
+                                else:
+                                    break
+                            if letter in secretWord:
+                                correctLetters.append(letter)
+                            else:
+                                incorrectLetters.append(letter)
+
+                        while True:
+                            hangman()
+                            userInput()
+                    </code>
+                </pre>
+
+            </div>
+
+        </div>
+        <div class="col-lg-5">
+            <div class="description-p">
+                <p>This is a small game I created when taking Python Class</p>
+                <p>Its called "Hangman", the logic of the game is for the player</p>
+                <p>to guess a letter until he or she is able to know the secret word</p>
+            </div>
+            <div>
+                <img src="Pics/snip1.JPG" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
