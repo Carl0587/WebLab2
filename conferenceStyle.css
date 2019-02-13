@@ -1,0 +1,25 @@
+#form-styling{
+    background: url("Pics/conference2.jpg") no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto Mono', monospace;
+}
+.jumbotron{
+    background-color: #fafafa;
+    text-align: center;
+
+    font-weight: bold;
+    opacity: 0.8;
+}
+#form{
+    opacity: 1;
+    padding-left: 30px;
+}
+label{
+    font-weight: bold;
+}
+.form-check-label{
+    font-size: 18px;
+}
